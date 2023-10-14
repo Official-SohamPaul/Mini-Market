@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>SignUp with MiniMarket</title>
+    <link rel='stylesheet' href='../index.css'>
+    <link rel='stylesheet' href='../mini.css'>
+</head>
+    <body id="bg-admin">
+    <section id='header'>
+            <a href='../OwnShop.html'>
+                <img src='../img/mini-marketLOGO.png' class='logo' alt='Logo' >
+            </a>
+            <div>
+                <ul id='navbar'>
+                    <li><a href='AdminHome.php'>Home</a></li>
+                    <li><a href='upload-f.php'>Upload</a></li>
+                    <li><a href='viewproduct.php'>View Product</a></li>               
+                </ul>
+            </div>
+        </section>
+    <section>
+       <form id='login' class='input-group-login' action="adminlogin.php" method="POST">
+            <input name="email" type='email'class='input-field'placeholder='Email Id' required >
+            <input name="password" type='password'class='input-field'placeholder='Enter Password' required>
+            <input type='checkbox'class='check-box' checked>
+            <span class='span_rem'>Remember Password</span>
+            <button type='submit'class='submit-btn'>Log in</button>
+            <span class='span_register'>Don't have Admin Account , <a href='Adminregister.html'>Register</a></span>
+        </form> 
+        <div class='container'>
+            
+        </div>
+        
+    </section>
+    </body>
+</html>
+    

@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan' , sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+#header{
+    /*background-color: #E3E6F3;*/
+    background-image: linear-gradient(to right , #ffffff ,rgb(124, 246, 244));
+    display: flex;
+    width: 100rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 88px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logo{
+    height: 100px;
+    margin: 10px;
+}
+.cartImg{
+    height: 80px;
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover ,
+#navbar li a.active {
+    color: #23bcb1;
+    
+}
+#navbar li a.active::after{
+    content: "";
+    width: 60%;
+    height: 2.05px;
+    background: #32afa7 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar li a.activecart::after{
+    content: "";
+    width: 30%;
+    height: 2.05px;
+    background: #32afa7 ;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+
+/*Middle*/
+#ads{
+    background-image: url(img/Fruits.jpg);
+    height: 80vh;
+    width: 100rem;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding:0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#ads h4{
+    padding-bottom: 15px;
+
+}
+#ads h1{
+    
+    color: rgb(66, 246, 255);
+    
+}
+#ads h3
+{
+    color: #21f8ff;
+}
+#ads .button{
+    border-radius: 4px;
+    background-color: #00ff08;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.4s ease;
+}
+#ads .button:hover{
+    background-color: #4fba34;
+}
+#veg{
+    background-image: url(img/vegetables.jpg);
+    height: 80vh;
+    width: 100rem;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding:0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* Shop css */
+#searchbar 
+{
+    list-style: none;
+    
+}
+#bg-shop , #bg-contact
+#bg-login ,#bg-home
+{   
+    background-color: rgb(255, 236, 236);
+    width: 100rem;
+}
+#shop-product
+{   background-color: rgb(247, 241, 233);
+    justify-content: center;
+    display: inline-block;
+    border: 2px solid rgb(124, 246, 244);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    transition: 0.5s ease;
+}
+#shop-product:hover
+{   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    text-shadow: #21f8ff;
+    /* margin: 35px 40px 45px 40px; */
+    margin-bottom: 25px;
+}
+#shop-product img
+{
+    height:200px;
+    width: 200px;
+    border: 2px solid rgb(66, 246, 255);
+    border-radius: 10px;
+}
+#shop-product h4 ,#shop-product h5, #shop-product h6
+{
+    color: black;
+}
+#shop-product span
+{
+    max-height: 100px;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+/* register */
+#confirm
+{
+    display: none;
+    color:#777;
+	font-size:12px;
+	bottom: 100px;
+	position:absolute;
+}
+/* upload */
+.logout{
+    height: 60px;
+    width: 60px;
+}
+.logout :hover
+{
+    border: 2px;
+    border-color: #23bcb1;
+    border-radius: 50%;
+}
+/* cart */
+#bg-cart
+{
+    background-color: antiquewhite;
+}
+#upper
+{
+    /*background-color: #b2fcff;*/
+    background-image: linear-gradient(to left , #c8faff ,#b2fcff);
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: fixed;
+}
+#cart-product
+{   background-color: rgb(247, 241, 233);
+    justify-content: center;
+    display: inline-block;
+    border: 2px solid rgb(124, 246, 244);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 15vh 30px 30px 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    transition: 0.5s ease;
+}
+#cart-product:hover
+{   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    text-shadow: #21f8ff;
+    /* margin: 35px 40px 45px 40px; */
+    margin-bottom: 25px;
+}
+#cart-product img
+{
+    height:200px;
+    width: 200px;
+    border: 2px solid rgb(66, 246, 255);
+    border-radius: 10px;
+}
+#cart-product h4 ,#cart-product h5, #cart-product h6
+{
+    color: black;
+}
+#cart-product span
+{
+    max-height: 100px;
+    max-width: 250px;
+    overflow: hidden;
+}
+#checkoutBox
+{   
+    background-color: rgb(243, 255, 229);
+    border: 2px solid rgb(66,246,255);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    scroll-behavior: smooth;
+    width: 100vw;
+    position: relative;
+}
+#proceedBox
+{   
+    margin-left: 80vw;
+    display: inline;
+    padding-bottom: 20px;
+}
+/* about */
+#bg-about ,#bg-contact
+{   
+    background-color: rgb(255, 236, 236);
+    width: 100rem;
+}
+#about
+{   background-color: rgb(247, 241, 233);
+    display: inline-block;
+    width: 60%;
+    border: 2px solid rgb(124, 246, 244);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.5s ease;
+}
+#terms h1, #privacy h1, #disclaimer h1,#about h1,#Communication h1
+{
+    color: black;
+}
+#about:hover
+{   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    text-shadow: #21f8ff;
+    margin-left: 70px;
+    margin-right: 10px;
+}
+#privacy
+{   background-color: rgb(247, 241, 233);
+    display: inline-block;
+    width: 25%;
+    border: 2px solid rgb(124, 246, 244);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.5s ease;
+}
+#privacy:hover
+{   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    text-shadow: #21f8ff;
+    margin: 0px 60px 40px 20px;
+}
+#terms
+{   background-color: rgb(247, 241, 233);
+    display: inline-block;
+    width: 70%;
+    border: 2px solid rgb(124, 246, 244);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: right;
+    margin: 30px;
+    margin-left: 25%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.5s ease;
+}
+#terms:hover
+{   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    text-shadow: #21f8ff;
+    margin: 20px 50px 40px 20px;
+    margin-left: 23%;
+}
+#disclaimer
+{   background-color: rgb(247, 241, 233);
+    display: inline-block;
+    width: 30%;
+    border: 2px solid rgb(124, 246, 244);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.5s ease;
+}
+#disclaimer:hover
+{   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    text-shadow: #21f8ff;
+    margin: 40px 35px 50px 50px;
+    margin-left: 45px;
+}
+#Communication
+{   background-color: rgb(247, 241, 233);
+    display: inline-block;
+    width: 50%;
+    border: 2px solid rgb(124, 246, 244);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.5s ease;
+}
+#Communication:hover
+{   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    text-shadow: #21f8ff;
+    margin: 20px 50px 50px 30px;
+}
+/* Admin page */
+#bg-admin
+{
+    background-color: rgb(255, 236, 236);
+    width: 100rem;
+}
+#admin-h4
+{
+    color: rgb(81, 80, 80);
+    margin: 30px 0 10px 30px;
+}
+.client-table
+{   
+    background-color: rgb(247, 241, 233);
+    display: inline-block;
+    border: 2px solid #08aeae;
+    margin: 30px 0 0 3vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    transition: 0.5s ease;  
+}
+.client-table thead tr
+{
+    background-color: #08aeae;
+    padding: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+.client-table tbody tr
+{
+    text-align: center;
+}
+.client-table th ,
+.client-table td
+{
+    padding: 12px 15px;
+}

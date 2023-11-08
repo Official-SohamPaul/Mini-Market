@@ -4,7 +4,7 @@ Welcome to my e-commerce website project! This project was created in August 202
 
 ## Technologies Used
 
-- Frontend: HTML, CSS, JavaScript, React
+- Frontend: HTML, CSS, JavaScript
 - Backend:PHP
 - Database: MySQL
 

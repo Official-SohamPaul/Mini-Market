@@ -1,4 +1,4 @@
-#Made by Soham Paul
+Made by Soham Paul
 
 # Mini-Market
 
